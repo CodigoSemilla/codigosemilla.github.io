@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>// Código Semilla</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Poppins:200,400" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+
+  <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    @media only screen and (max-width: 414px) {
+      .container {
+        grid-template-columns: 20px 1fr 20px;
+      }
+    }
+
+    @media only screen and (min-width: 490px) {
+      .container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+      }
+    }
+
+    body {
+      text-align: center;
+      background-image: url("https://s3-us-west-2.amazonaws.com/codigosemilla-temp/clouds.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+    }
+
+    #texture {
+      width: 100vw;
+      height: 100vh;
+      background:url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQImWN4zcVljIwZCAswMDA0IAsAAI/5Em9q+2TrAAAAAElFTkSuQmCC
+      ) repeat;
+      position: fixed;
+      z-index: -100;
+    }
+
+    .container {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+    }
+    .baloo {
+      font-family: 'Baloo', cursive;
+    }
+    .poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+    .network {
+      color: #fefefee7;
+      font-size: 2rem;
+      margin-right: 3vw;
+      margin-left: 3vw;
+      text-decoration: none;
+    }
+    .text-light {
+      font-weight: lighter;
+    }
+    #thanks {
+      padding-bottom: 50px;
+      font-size: 1.2rem;
+    }
+
+    #brand {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      font-size: 2.2rem;
+      text-shadow: 5px 7px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    #social {
+      grid-row: 5 / 6;
+      grid-column: 2 / 3;
+      padding-bottom: 20px;
+    }
+
+    #message {
+      grid-row: 3 / 6;
+      grid-column: 2 / 3;
+    }
+
+    @media only screen and (min-width: 490px) {
+      #thanks { font-size: 2.2rem; }
+      #brand { font-size: 4.2rem; }
+      #building { font-size: 1.5rem; }
+
+      #social {
+        font-size: 2.5rem;
+        padding-bottom: 2.5vh;
+      }
+
+      #texture {
+        background:url(
+          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNgwAOkkDAcpKHRuFWiAABIIQFpc1fiQwAAAABJRU5ErkJggg==
+        ) repeat;
+      }
+    }
+
+    @media only screen and (min-width: 2500px) {
+      #brand { font-size: 10rem }
+      #building { font-size: 2.5rem }
+      #social { padding-bottom: 2.5vh }
+
+      #thanks {
+        font-size: 4.2rem;
+        padding-bottom: 90px;
+      }
+      .network {
+        font-size: 4rem;
+        margin-right: 3vw;
+        margin-left: 3vw;
+        text-decoration: none;
+      }
+
+      #texture {
+        background:url(
+          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNgwAOkkDAcpKHRuFWiAABIIQFpc1fiQwAAAABJRU5ErkJggg==
+        ) repeat;
+      }
+    }
+  </style>
+</head>
+
+  <body>
+    <div id="texture"></div>
+
+    <div class="container">
+      <div class="baloo" id="brand"> // Código Semilla </div>
+
+      <div id="message">
+        <h2 class="poppins" id="thanks">
+          Muchas Gracias a las miles de personas que han participado hasta ahora.
+        </h2>
+
+        <p class="poppins text-light" id="building">
+          Hoy – con el apoyo de todos – estamos trabajando con mucho cariño y esfuerzo en el
+          desarrollo de la nueva plataforma!
+        </p>
+      </div>
+
+      <div id="social">
+        <a href="https://instagram.com/CodigoSemilla" target="_blank" class="network">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://facebook.com/CodigoSemillaPRO" target="_blank" class="network">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://github.com/CodigoSemilla" target="_blank" class="network">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://twitter.com/CodigoSemilla" target="_blank" class="network">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="mailto:hola@codigosemilla.com" target="_top" class="network">
+          <i class="far fa-at"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
