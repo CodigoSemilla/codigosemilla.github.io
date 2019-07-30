@@ -65,18 +65,18 @@
       display: flex;
       color: #fff;
       text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-      box-shadow: inset 0 0 5rem rgba(0, 0, 0, 1);
       background-color: rgb(1, 2, 33);
 
     }
 
     .background {
-      background-color: #FF6300;
+      background-color: rgb(255, 99, 0);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       position: fixed;
       width: 100vw;
+      box-shadow: inset 0 0 5rem rgb(179, 78, 0);
       height: 100vh;
       z-index: -100;
     }
@@ -222,13 +222,24 @@
     .ls-2 {
       letter-spacing: 2px;
     }
+
+
+        .display-4 {
+        word-wrap: break-word !important;
+        }
+
+        @media screen and (max-width: 415px) {
+        .display-4 {
+        font-size: 3rem !important;
+        }
+        }
   </style>
 </head>
 
 <body class="text-center">
 
 
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner text-left">
         <a href="../codigosemilla.github.io/index.html" class="link display-1 font-weight-bold masthead-brand ml-2 mb-4 ml-lg-5 mt-lg-5">
