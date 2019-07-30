@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>// Código Semilla</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    /*
+ * Globals
+ */
+
+    /* Links */
+    a,
+    a:focus,
+    a:hover {
+      color: #fff;
+    }
+
+    /* Custom default button */
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      color: #333;
+      text-shadow: none;
+      /* Prevent inheritance from `body` */
+      background-color: #fff;
+      border: .05rem solid #fff;
+    }
+
+
+    /*
+ * Base structure
+ */
+
+    html,
+    body {
+      height: 100%;
+      /* background-color: #333; */
+    }
+
+    body {
+      display: -ms-flexbox;
+      display: flex;
+      color: #fff;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, 1);
+      background-color: rgb(1, 2, 33);
+
+    }
+
+    .background {
+      background-color: #FF6300;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: -100;
+    }
+
+    .cover-container {
+      max-width: 100vw;
+    }
+
+
+    /*
+ * Header
+ */
+    .masthead {
+      margin-bottom: 2rem;
+    }
+
+    .masthead-brand {
+      margin-bottom: 0;
+    }
+
+    .nav-masthead .nav-link {
+      padding: .25rem 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .5);
+      background-color: transparent;
+      border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link+.nav-link {
+      margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    @media (min-width: 48em) {
+      .masthead-brand {
+        float: left;
+      }
+
+      .nav-masthead {
+        float: right;
+      }
+    }
+
+
+    /*
+ * Cover
+ */
+    .cover {
+      padding: 0 1.5rem;
+    }
+
+    .cover .btn-lg {
+      padding: .75rem 1.25rem;
+      font-weight: 700;
+    }
+
+
+    /*
+ * Footer
+ */
+    .mastfoot {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .brand {
+      width: 100vw;
+      height: 100px;
+      background-image: url("https://codigosemilla-temp.s3-us-west-2.amazonaws.com/codigosemilla.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .triangle {
+      background-image: url("https://codigosemilla-temp.s3-us-west-2.amazonaws.com/triangle-w.png");
+    }
+
+    .circle {
+      background-image: url("https://codigosemilla-temp.s3-us-west-2.amazonaws.com/circle-w.png");
+    }
+
+    .rectangle {
+      background-image: url("https://codigosemilla-temp.s3-us-west-2.amazonaws.com/rectangle-w.png");
+    }
+
+    .innovation-text {
+      background-image: url("https://codigosemilla-temp.s3-us-west-2.amazonaws.com/innovation-text.png");
+    }
+
+    .image {
+      width: 60%;
+      padding-top: 60%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 1.2rem;
+      margin-top: 7rem;
+    }
+
+    .image-text {
+      width: 40%;
+      min-width: 200px;
+      padding-top: 40%;
+      min-height: 200px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .subject {
+      font-size: 2rem;
+      font-weight: lighter;
+      letter-spacing: 2px;
+    }
+
+
+
+    .organge {
+      background-color: #FF6300;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #innovation-block {}
+
+    .link:hover {
+      text-decoration: none;
+    }
+
+    .ls-2 {
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body class="text-center">
+
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner text-left">
+        <a href="../codigosemilla.github.io/index.html" class="link display-1 font-weight-bold masthead-brand ml-2 mb-4 ml-lg-5 mt-lg-5">
+          ←
+        </a>
+
+      </div>
+    </header>
+
+    <main role="main" class="inner cover">
+      <div class="container">
+        <div class="row mb-5 pb-5">
+
+
+          <div class="image-text innovation-text w-25 text-left mb-0"></div>
+          <div class="display-3 font-weight-bold text-left w-100 mt-5 mb-4">
+            Arte + Tecnología
+          </div>
+
+          <div class="h3 font-weight-light ls-2 text-left">
+            La Inteligencia Artificial y la Realidad Aumentada son sólo un par de ejemplos de tecnologías que ya están
+            transformando tu industria.
+            <br>
+            <br>
+            Por esto, queremos desarrollar contigo nuevas estrategias de expansión basadas en tus propios datos junto
+            con experiencias inmersivas personalizadas para cada uno de tus usuarios disponibles en las plataformas de
+            Apple, Android y Oculus.
+            <br>
+            <br>
+            Blockbuster o Netflix?
+
+          </div>
+
+          <a href="mailto:hola@codigosemilla.com?subject=Sobre%20Innovación%20con%20Código%20Semilla"
+            class="btn btn-lg bg-white text-dark mt-5">Conectar</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+    </footer>
+  <div class="background"></div>
+</body>
+
+</html>
